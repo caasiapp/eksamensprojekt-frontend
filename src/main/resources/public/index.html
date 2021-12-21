@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Samsø Kommunalvalg 2021</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <style>
+    td{
+      border: black solid 1px;
+    }
+  </style>
+</head>
+<body>
+<h2>Samsø Kommunalvalg 2021</h2>
+<br>
+<a href="/results">Click here to see results</a>
+<br>
+<br>
+<form id="search-party-form">
+  <label for="search-party-input">Search after party</label>
+  <br>
+  <input type="text" id="search-party-input">
+  <input type="submit">
+  <a href="/">Clear</a>
+</form>
+<br>
+<table>
+  <thead>
+  <tr>
+    <th>Id</th>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Commune</th>
+    <th>Party Id</th>
+    <th>Party Name</th>
+  </tr>
+  </thead>
+  <tbody id="candidates-table">
+  </tbody>
+</table>
+
+<h2>Create new candidate</h2>
+<form id="create-candidate-form">
+  <label for="firstname">First name:</label><br>
+  <input required type="text" id="firstname" name="firstname">
+  <br>
+  <label for="lastname">Last name:</label><br>
+  <input required  type="text" id="lastname" name="lastname">
+  <br>
+  <label for="commune">Commune:</label><br>
+  <input required type="text" id="commune" name="commune">
+  <br>
+  <label for="partyid">Party Id:</label><br>
+  <input required type="text" id="partyid" name="partyid">
+  <br>
+  <input type="submit">
+</form>
+<br>
+<h2>Edit Candidate</h2>
+<form id="edit-candidate-form">
+  <label for="edit-firstname">First name:</label><br>
+  <input required type="text" id="edit-firstname" name="firstname">
+  <br>
+  <label for="edit-lastname">Last name:</label><br>
+  <input required type="text" id="edit-lastname" name="lastname">
+  <br>
+  <label for="edit-commune">Commune:</label><br>
+  <input required type="text" id="edit-commune" name="commune">
+  <br>
+  <label for="edit-candidateId">Candidate Id:</label><br>
+  <input required type="text" id="edit-candidateId" name="candidateId">
+  <br>
+  <input type="submit">
+</form>
+
+<script src="candidates.js"></script>
+
+</body>
+</html>
